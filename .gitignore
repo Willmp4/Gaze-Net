@@ -3,3 +3,4 @@ __pycache__/model.cpython-311.pyc
 __pycache__/reader.cpython-39.pyc
 checkpoint/p00.label/train_log
 models/checkpoint/p00.label/train_log
+models/checkpoint/p00.label/Iter_10_GazeNet.pt
