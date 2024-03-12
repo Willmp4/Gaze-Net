@@ -39,6 +39,7 @@ if __name__ == "__main__":
       os.makedirs(savepath)
   
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    print(f"Device:{device}")
     
     print("Read data")
     dataset = reader.txtload(trainlabelpath, imagepath, config["params"]["batch_size"], shuffle=True, num_workers=6, header=True)
@@ -61,7 +62,7 @@ if __name__ == "__main__":
 
     print("Traning")
     length = len(dataset)
-    total = length * config["params"]["epoch"]
+    total = length * config["params"]["epoch"] 
     cur = 0
     timebegin = time.time()
     with open(os.path.join(savepath, "train_log"), 'w') as outfile:
