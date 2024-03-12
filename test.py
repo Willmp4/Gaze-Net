@@ -59,7 +59,6 @@ if __name__ == "__main__":
       net.to(device)
       net.load_state_dict(statedict)
       net.eval()
-
       print(f"Test {saveiter}")
       length = len(dataset)
       accs = 0
